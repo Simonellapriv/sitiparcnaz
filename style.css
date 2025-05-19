@@ -14,14 +14,14 @@
    }
    /* Header */
    header {
-    background-color: #2e5e4e;
+    background-color: #013020;
     color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: center 
    }
    .marchio {
     font-size: 2em;
@@ -53,7 +53,7 @@
    .banner-title,
    .hero h2 {
     font-size: 2rem;
-    color: #2e5e4e;
+    color: #ffffff;
     margin-bottom: 1rem;
    }
    .banner p,
@@ -79,7 +79,7 @@
     padding: 2rem;
    }
    h1, h2, h3 {
-    color: #2e5e4e;
+    color: #ffffff;
     margin: 2rem 0 1rem;
    }
    p {
