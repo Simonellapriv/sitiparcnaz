@@ -4,6 +4,11 @@
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
  }
+ 
+ .content{
+	 max-width: 1100px; 
+   margin: 0 auto
+ }
 
    body {
     background-color: #f8f9f5;
@@ -13,7 +18,8 @@
    }
    .nav-link{
     display: flex;
-    align-items: center ;
+    text-align: center;
+	display: block;
    }
 
    header {
@@ -43,9 +49,9 @@
     justify-content: center;
    }
    .nav-link {
-    color: white;
     text-decoration: none;
     font-weight: bold;
+	color: inherit;
    }
    .nav-link:hover {
     text-decoration: underline;
@@ -53,14 +59,14 @@
    /* Hero/Banner */
    .banner,
    .hero {
-    background-color: #e8f0e3;
+    
     padding: 2rem;
     text-align: center;
    }
    .banner-title,
    .hero h2 {
     font-size: 2rem;
-    color: #ffffff;
+    
     margin-bottom: 1rem;
    }
    .banner p,
@@ -81,12 +87,12 @@
    }
    /* Contenuto principale */
    main {
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     margin: auto;
     padding: 2rem;
    }
    h1, h2, h3 {
-    color: #ffffff;
+    
     margin: 2rem 0 1rem;
    }
    p {
@@ -102,11 +108,11 @@
     padding: 2rem 0;
    }
    .park-card, .parchi.card {
-    background-color: #fafafa;
+    /*background-color: #fafafa;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);*/
     text-align: center;
     transition: transform 0.3s ease;
    }
@@ -114,8 +120,8 @@
     transform: translateY(-5px);
    }
    .park-card img, .parchi-img img {
-    width: 100%;
-    height: 180px;
+    width: 25em;
+    height: 25em;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
    }
@@ -132,7 +138,7 @@
    /* Sezione attività */
    .attivita, .attivita-section {
     padding: 2rem;
-    background-color: #e8f0e3;
+    
     text-align: center;
    }
    .attivita h2, .attivita-section h3 {
@@ -146,9 +152,23 @@
     max-width: 600px;
     margin: auto;
    }
-   .attivita ul li {
+   
+   .attivita p {
+    padding-left: 1.5rem;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+   }
+   
+   .listsection {
+	    max-width: 1200px;     /* o qualsiasi valore preferito */
+  margin: 0 auto;        /* centra orizzontalmente */
+  padding: 0 1rem;       /* opzionale: padding laterale */
+   }
+   
+   .listsection ul li {
     margin-bottom: 0.5rem;
-    list-style-type: disc;
+    list-style-type: none;
    }
    /* Immagini secondarie */
    main img:not(:first-of-type) {
@@ -164,19 +184,81 @@
     clear: both;
    }
    /* Pulsanti */
-   .button {
-    display: inline-block;
+   /*.button {
     margin-top: 2rem;
+	margin-bottom: 2rem;
     background-color: #4a6829;
     color: white;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-   }
+	font-size: x-large;
+	width: 20rem;
+   }*/
+   
+   .button-container {
+  text-align: center;
+}
+
+.button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #4a6829;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: x-large;
+  width: 20rem;
+  display: inline-block;  /* fondamentale per il centramento */
+}
+   
    .button:hover {
     background-color: #3b521f;
    }
+   
+ .bottom {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url('img/attivitahome.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.bottom h3 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  margin-top: -12rem; /* Spinge il titolo in alto */
+  padding-top: 2rem;    /* margine dall'alto del container */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.button-overlay {
+  background-color: white;
+  color: green;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 3rem; /* distanzia dal fondo */
+}
+
+.attivita-section {
+  position: relative;
+  z-index: 2;
+}
+   
    /* Footer */
    footer {
     background-color: #2e5e4e;
@@ -223,10 +305,15 @@
     main img:not(:first-of-type) {
       width: 100%;
       float: none;
-      margin: 1rem 0;
+      
     }
     .attivita ul {
       text-align: left;
       padding-left: 1rem;
     }
+   }
+   @media (max-width: 1024px) {
+    .parchi-grid, .park-grid {
+      grid-template-columns: 1fr; 
+    } 
    }

@@ -8,19 +8,22 @@
   </head>
   <body>
     <header>
+      <a class="nav-link" href="index.html">
       <section class="marchio">PARCHI NAZIONALI</section>
+    </a>
       <nav>
         
         <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="parchi.html">Parchi</a>
         <a class="nav-link" href="attivita.html">Attività</a>
+		<a class="nav-link" href="parchi.html">Parchi</a>
       </nav>
     </header>
  
     <main>
       <img class="homeimg" src="img/primafotoattivita.jpg" alt="" />
  
-      <section class="hero">
+	<div class="content">
+      <section>
         <h2>Attività ed esperienze</h2>
         <p class="testoattivita">
           I parchi naturali italiani offrono esperienze uniche per esplorare
@@ -49,9 +52,27 @@
           e laboratori didattici consentono di approfondire tematiche come la
           conservazione degli ecosistemi, la storia geologica delle montagne o
           la tutela di specie in pericolo.
-          <img class="homeimg" src="img/attivitaimpronta.jpg" alt="" />
-          <img class="homeimg" src="img/attivitafam.jpg" alt="" />
-          <img class="homeimg" src="img/attivitatraking.webp" alt="" />
+		  
+		  <div class="park-grid">
+				<div class="park-card">
+				   
+					<img src="img/attivitaimpronta.jpg" alt="impronta">
+					
+				</div>
+
+				<div class="park-card">
+					
+					<img src="img/attivitafam.jpg" alt="foto famiglia">
+					
+				</div>
+				
+				<div class="park-card">
+					
+					<img src="img/attivitatraking.webp" alt="trekking">
+					
+				</div>
+			 </div>
+          
 
 
 
@@ -85,72 +106,73 @@
           esperienze su misura, imparare a conoscere e rispettare la natura,
           nonché scoprire la ricchezza culturale dei territori protetti.
 
-          <img class="homeimg" src="img/bannerattivita.webp" alt="" />
+          
         </p>
+		<img class="homeimg" src="img/bannerattivita.webp" alt="" />
       </section>
- 
-      <section class="attivita">
+	<div class="sectionlist">
+      <section class="listsection">
         <h2>Escursioni e Trekking</h2>
         <ul>
           <li>
-            Parco Nazionale del Gran Paradiso: Sentieri alpini che attraversano
+            <b>Parco Nazionale del Gran Paradiso</b>: Sentieri alpini che attraversano
             ghiacciai e pascoli, ideali per il trekking d’alta quota.
           </li>
           <li>
-            Parco Nazionale d’Abruzzo, Lazio e Molise: Faggete vetuste, percorsi
+            <b>Parco Nazionale d’Abruzzo, Lazio e Molise</b>: Faggete vetuste, percorsi
             adatti a tutti i livelli e possibilità di avvistare fauna selvatica.
           </li>
           <li>
-            Parco Nazionale del Pollino: Itinerari tra vette selvagge, gole e i
+            <b>Parco Nazionale del Pollino</b>: Itinerari tra vette selvagge, gole e i
             caratteristici pini loricati.
           </li>
           <li>
-            Parco Nazionale delle Dolomiti Bellunesi: Ampia rete di sentieri con
+            <b>Parco Nazionale delle Dolomiti Bellunesi</b>: Ampia rete di sentieri con
             panorami spettacolari e rifugi alpini.
           </li>
           <li>
-            Parco Nazionale della Sila: Boschi di faggio e pino laricio,
+            <b>Parco Nazionale della Sila</b>: Boschi di faggio e pino laricio,
             percorsi immersi nella natura dell’altopiano.
           </li>
           <li>
-            Parco Nazionale delle Foreste Casentinesi, Monte Falterona e
-            Campigna: Foreste secolari, eremi e abbazie raggiungibili a piedi.
+            <b>Parco Nazionale delle Foreste Casentinesi, Monte Falterona e
+            Campigna</b>: Foreste secolari, eremi e abbazie raggiungibili a piedi.
           </li>
         </ul>
       </section>
  
-      <section class="attivita">
+      <section class="listsection">
         <h2>Visite Guidate e Laboratori Didattici</h2>
         <ul>
           <li>
-            Parco Nazionale d’Abruzzo, Lazio e Molise: Centri visita per
+            <b>Parco Nazionale d’Abruzzo, Lazio e Molise</b>: Centri visita per
             conoscere l’orso bruno marsicano e progetti di educazione
             ambientale.
           </li>
           <li>
-            Parco Nazionale del Gran Paradiso: Guide che illustrano la storia
+            <b>Parco Nazionale del Gran Paradiso</b>: Guide che illustrano la storia
             della protezione dello stambecco e l’ecologia alpina.
           </li>
           <li>
-            Parco Nazionale delle Foreste Casentinesi: Percorsi guidati per
+            <b>Parco Nazionale delle Foreste Casentinesi</b>: Percorsi guidati per
             scoprire la biodiversità forestale e l’importanza delle faggete
             vetuste.
           </li>
           <li>
-            Parco Nazionale della Sila: Laboratori su flora, fauna e antiche
+            <b>Parco Nazionale della Sila</b>: Laboratori su flora, fauna e antiche
             tradizioni agro-pastorali.
           </li>
           <li>
-            Parco Nazionale del Vesuvio: Visite geologiche alla scoperta del
+            <b>Parco Nazionale del Vesuvio</b>: Visite geologiche alla scoperta del
             vulcano e della sua storia eruttiva.
           </li>
         </ul>
       </section>
  
-      <section class="attivita">
+      <section class="listsection">
         <h2>Sport all’Aria Aperta</h2>
  
-        <p>Arrampicata:</p>
+        <p style="font-weight:bold">Arrampicata:</p>
         <ul>
           <li>
             Parco Nazionale del Pollino: Pareti rocciose ideali per climber
@@ -162,7 +184,7 @@
           </li>
         </ul>
  
-        <p>Mountain Bike:</p>
+        <p style="font-weight:bold">Mountain Bike:</p>
         <ul>
           <li>
             Parco Nazionale della Sila: Percorsi sterrati tra boschi e
@@ -174,7 +196,7 @@
           </li>
         </ul>
  
-        <p>Canoa / Kayak / Snorkeling:</p>
+        <p style="font-weight:bold">Canoa / Kayak / Snorkeling:</p>
         <ul>
           <li>
             Parco Nazionale delle Cinque Terre: Tratti costieri accessibili via
@@ -190,7 +212,7 @@
           </li>
         </ul>
  
-        <p>Sci e Sport Invernali:</p>
+        <p style="font-weight:bold">Sci e Sport Invernali:</p>
         <ul>
           <li>
             Parco Nazionale della Sila: Sci di fondo e ciaspolate in altopiano.
@@ -202,53 +224,55 @@
         </ul>
       </section>
  
-      <section class="attivita">
+      <section class="listsection">
         <h2>Birdwatching</h2>
         <ul>
           <li>
-            Parco Nazionale d’Abruzzo, Lazio e Molise: Rapaci come l’aquila
+            <b>Parco Nazionale d’Abruzzo, Lazio e Molise</b>: Rapaci come l’aquila
             reale e possibilità di avvistare camosci.
           </li>
           <li>
-            Parco Nazionale delle Foreste Casentinesi: Varie specie di uccelli
+            <b>Parco Nazionale delle Foreste Casentinesi</b>: Varie specie di uccelli
             che nidificano in foresta.
           </li>
           <li>
-            Parco Nazionale dell’Arcipelago Toscano: Uccelli marini e migratori,
+            <b>Parco Nazionale dell’Arcipelago Toscano</b>: Uccelli marini e migratori,
             come gabbiano corso e falco pellegrino.
           </li>
           <li>
-            Parco Nazionale del Cilento, Vallo di Diano e Alburni: Zone umide e
+            <b>Parco Nazionale del Cilento, Vallo di Diano e Alburni</b>: Zone umide e
             tratte costiere frequentate da uccelli migratori.
           </li>
         </ul>
       </section>
  
-      <section class="attivita">
+      <section class="listsection">
         <h2>Siti Archeologici e Borghi Storici</h2>
         <ul>
           <li>
-            Parco Nazionale delle Cinque Terre: I caratteristici borghi marinari
+            <b>Parco Nazionale delle Cinque Terre</b>: I caratteristici borghi marinari
             (Riomaggiore, Manarola, Corniglia, Vernazza, Monterosso).
           </li>
           <li>
-            Parco Nazionale del Vesuvio: Vicinanza a siti archeologici come
+            <b>Parco Nazionale del Vesuvio</b>: Vicinanza a siti archeologici come
             Pompei ed Ercolano.
           </li>
           <li>
-            Parco Nazionale dell’Arcipelago Toscano: Isola d’Elba con le
+            <b>Parco Nazionale dell’Arcipelago Toscano</b>: Isola d’Elba con le
             residenze napoleoniche, resti romani a Giannutri.
           </li>
           <li>
-            Parco Nazionale del Cilento, Vallo di Diano e Alburni: Vicinanza ai
+            <b>Parco Nazionale del Cilento, Vallo di Diano e Alburni</b>: Vicinanza ai
             siti di Paestum e Velia.
           </li>
           <li>
-            Parco dell’Etna: Paesini etnei con centri storici in pietra lavica,
+            <b>Parco dell’Etna</b>: Paesini etnei con centri storici in pietra lavica,
             chiese e musei dedicati all’attività vulcanica.
           </li>
         </ul>
       </section>
+	  </div>
+	  </div>
     </main>
  
     <footer>
