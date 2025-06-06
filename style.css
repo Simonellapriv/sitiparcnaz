@@ -1,12 +1,11 @@
- nav * {
-  margin: 0%;
-  padding: 0%;
+  * {
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
  }
  
  .content{
-	 max-width: 1100px; 
+	 max-width: 970px; 
    margin: 0 auto
  }
 
@@ -14,7 +13,6 @@
     background-color: #f8f9f5;
     color: #2c2c2c;
     line-height: 1.6;
-    padding: 20px;
    }
    .nav-link{
     display: flex;
@@ -30,9 +28,9 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    height: 52px;
     .title{
-      dispay:center flex
+      display:center flex;
     }
 
    }
@@ -42,7 +40,6 @@
     letter-spacing: 2px;
    }
    nav {
-    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -89,7 +86,7 @@
    main {
     /*max-width: 1000px;*/
     margin: auto;
-    padding: 2rem;
+    /*padding: 2rem;*/
    }
    h1, h2, h3 {
     
@@ -97,7 +94,7 @@
    }
    p {
     margin-bottom: 1rem;
-    text-align: justify;
+    /*text-align: justify;*/
     font-size: 1.1em;
    }
    /* Sezione griglia dei parchi */
@@ -258,6 +255,37 @@
   position: relative;
   z-index: 2;
 }
+
+.banner-image {
+  background-size: cover;
+  height: 450px;
+  color: white;
+  padding: 70px 0;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.banner-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 590px;
+  background: #003007;
+background: linear-gradient(90deg, rgba(0, 48, 7, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 0;
+}
+
+.banner-image .content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-image .content h2 {
+  margin: 0;
+  font-size: 3em;
+}
    
    /* Footer */
    footer {
@@ -296,11 +324,18 @@
       align-items: center;
       text-align: center;
     }
+    header {
+      height: auto;
+    }
+    .content {
+      padding: 2em;
+    }
     nav {
       justify-content: center;
     }
     .nav-link {
       margin: 0.5rem 0;
+      font-size: 1.2em;
     }
     main img:not(:first-of-type) {
       width: 100%;
@@ -311,9 +346,23 @@
       text-align: left;
       padding-left: 1rem;
     }
+
+    p {
+      text-align: justify;
+    }
+
+    a.button {
+      padding: 1em 0;
+      margin: 0;
+      width: 100%;
+      font-size: 1.2em;
+    }
    }
-   @media (max-width: 1024px) {
+   @media (min-width: 768px) and (max-width: 1024px) {
     .parchi-grid, .park-grid {
-      grid-template-columns: 1fr; 
-    } 
+      grid-template-columns: 1fr 1fr; 
+    }
+    .content {
+      padding: 2em;
+    }
    }
